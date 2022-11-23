@@ -18,11 +18,11 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			//	machao:['male',' ','1971911/1971911',['goldenage','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 		
 				//sunquan:['female',' ','1182383/1182383',['x','los','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
-				zhugeliang:['male',' ','2372137/2372137',['roars','pstart']],
+				zhugeliang:['male',' ','543543/543543',['roars','pstart']],
 			
-				zhaoyun:['male',' ','2372137/2372137',['airson','pstart']],
-				machao:['male',' ','2372137/2372137',['goldenage','pstart']],
-				sunquan:['male',' ','2372137/2372137',['x','pstart']],
+				zhaoyun:['male',' ','543543/543543',['airson','pstart']],
+				machao:['male',' ','543543/543543',['goldenage','pstart']],
+				sunquan:['male',' ','543543/543543',['x','pstart']],
 //
 
 				
