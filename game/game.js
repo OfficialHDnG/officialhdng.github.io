@@ -53,6 +53,42 @@
 		lvx:[],
 		coin:[],
 		expe:[],
+		lvro:[],
+		lvrw:[],
+		lvrt:[],
+		lvrl:[],
+		lvrs:[],
+		lvrb:[],
+		lvre:[],
+	 
+		lvao:[],
+		lvaw:[],
+		lvat:[],
+		lval:[],
+		lvas:[],
+		lvab:[],
+		lvae:[],
+	 
+		lvgo:[],
+		lvgw:[],
+		lvgt:[],
+		lvgl:[],
+		lvgs:[],
+		lvgb:[],
+		lvge:[],
+		   
+	   
+		lvxo:[],
+		lvxw:[],
+		lvxt:[],
+		lvxl:[],
+		lvxs:[],
+		lvxb:[],
+		lvxe:[],
+	
+	
+	
+
 
 		//TEST
 		xtsu:[],
@@ -10291,7 +10327,7 @@ case 'gbig':zoom=1.6;break;
 			heart:"❃",
 			diamond:"♛",
 			spade:"⚶",
-			club:"╬",
+			club:"🜎",
 			ghujia:'护甲',
 			ghujia_bg:'甲',
 			heart2:"红桃",

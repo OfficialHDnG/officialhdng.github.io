@@ -75,9 +75,40 @@ ui_zoom: 1.6,
 	//  24.5k ~ 144k elem x5
 	lvx:0,
     //66736~246k x3.5 healon, mystery 136k~586k
-	lvrw:0,
-	lvaw:0,
+	lvro:0,
+    lvrw:0,
+    lvrt:0,
+    lvrl:0,
+    lvrs:0,
+    lvrb:0,
+    lvre:0,
+ 
+    lvao:0,
+    lvaw:0,
+    lvat:0,
+    lval:0,
+    lvas:0,
+    lvab:0,
+    lvae:0,
+ 
+    lvgo:0,
+    lvgw:0,
+    lvgt:0,
+    lvgl:0,
+    lvgs:0,
+    lvgb:0,
+    lvge:0,
+       
+   
+    lvxo:0,
+    lvxw:0,
+    lvxt:0,
+    lvxl:0,
+    lvxs:0,
+    lvxb:0,
+    lvxe:0,
 expdam:1,
+
 
 aw:0,
 al:2,
