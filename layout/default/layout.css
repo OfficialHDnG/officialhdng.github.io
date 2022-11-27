@@ -398,7 +398,7 @@ table {
 	transition: all 0.5s;
 }
 #splash>div>.splashtext {
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	font-size: 50px;
 	position: absolute;
@@ -656,8 +656,10 @@ table {
 }
 
 .dialog .button.character.cardbg>.avatar_name {
-	font-family: 'times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	font-variant: small-caps;
+	text-shadow: rgba(213, 194, 179,1) 0 0 3px,rgba(213, 194, 179,1) 0 0 3px,rgba(213, 194, 179,1) 0 0 3px,
+		rgba(213, 194, 179,1) 0 0 3px,black 0 0 3px;
 	font-size: 20px;
 	width: 100%;
 	height: 20px;
@@ -1354,6 +1356,7 @@ body>.background.land {
 }
 /*--------卡牌--------*/
 .card {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	width: 104px;
 	height: 104px;
 	margin-top: 8px;
@@ -1361,15 +1364,21 @@ body>.background.land {
 	margin-right: 4px;
 	position: relative;
 	/*overflow: hidden;*/
+
 	text-align: center;
+	text-shadow: rgba(213, 194, 179,1) 0 0 3px,rgba(213, 194, 179,1) 0 0 3px,rgba(213, 194, 179,1) 0 0 3px,
+	rgba(213, 194, 179,1) 0 0 3px,black 0 0 3px;
+
 }
 .card>.info {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	right: 690px;
 	top: 9px;
 	white-space: nowrap;
 	text-align: center;
 }
 .card>.range {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	bottom: 5px;
 	right: 5px;
 	text-align: center;
@@ -1378,6 +1387,7 @@ body>.background.land {
 		rgba(213, 194, 179,1) 0 0 3px,black 0 0 3px;
 }
 .card>.gaintag {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	bottom: 5px;
 	left: 5px;
 	text-align: center;
@@ -1386,6 +1396,7 @@ body>.background.land {
 		rgba(255, 120, 0,1) 0 0 2px,black 0 0 1px;
 }
 .card>.name {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	top: 9px;
 	left: 6px;
 	text-align: center;
@@ -1415,6 +1426,7 @@ body>.background.land {
 
 
 .card.fullimage>.name.long {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	top: 6px;
 	display: none;
 
@@ -1423,6 +1435,7 @@ body>.background.land {
 	display: none;
 }
 .card>.intro {
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	top: 85px;
 	right: 0;
 	text-align: center;
@@ -1433,6 +1446,7 @@ body>.background.land {
 	text-align: center;
 }
 .card>.cardframebg{
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -1576,6 +1590,21 @@ div:not(.handcards)>.card>.info>span,
 	pointer-events: none;
 	background-image:url('../../theme/style/player/ea.jpg');
 }
+
+.player .playerglea {
+	opacity: 1;
+    animation: fade 2s linear;
+	animation-fill-mode: forwards;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+		top: 0;
+	z-index: 4;
+	pointer-events: none;
+	background-image:url('../../theme/style/player/glea.png');
+}
+
 
 
 .player .playermea {
@@ -1784,13 +1813,16 @@ div:not(.handcards)>.card>.info>span,
 	padding-top: 12px;
 }
 .card>.background {
-	font-family: 'xiaozhuan'
+	color:white;
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
+	text-shadow:0px 0px 7px #ffd343, 0px 0px 7px #ffd27d;
+
 }
 .card>.background.tight {
 	letter-spacing: -0.2em
 }
 .marks>.card>.background.skillmark {
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	padding-top: 4px;
 }
@@ -2125,7 +2157,7 @@ div:not(.handcards)>.card>.info>span,
 	display: none;
 	top: 8px;
 	left: 6px;
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	font-size: 20px;
 	letter-spacing: 3px;
@@ -2614,7 +2646,7 @@ div:not(.handcards)>.card>.info>span,
 	transition-property: opacity;
 }
 .player>.cardeffect {
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	font-size: 108px;
 	width: 100%;
@@ -4156,7 +4188,7 @@ div:hover>.intro {
 .player .identity>div {
 	margin: auto;
 	position: relative;
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	font-size: 24px;
 	top: 0;
@@ -4934,7 +4966,7 @@ div[data-decoration="bronze"]::after{
 	height: 65px;
 	border-radius: 100% !important;
 	font-size: 55px;
-	font-family: 'huangcao';
+	font-family: 'times new roman','serif','kaiti','KaiTi','STKaiti';
 	top: calc(50% - 110px);
 	line-height: 65px;
 	text-align: center;
@@ -5068,7 +5100,7 @@ div[data-decoration="bronze"]::after{
 }
 
 .wunature {
-	font-family: 'huangcao','times new roman','serif','kaiti','STKaiti';
+	font-family: 'times new roman','serif','kaiti','STKaiti';
 	font-variant: small-caps;
 	font-size: 24px;
 	color: white !important;
