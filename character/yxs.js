@@ -3,7 +3,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 	return {
 		name:'yxs',
 		character:{
-			yxs_qinqiong:["male","wei",4,["yxs_fanji","yxs_menshen"],[]],
+			yxs_qinqiong:["male","wei",4,["yxs_fanji","yxs_menshem"],[]],
 			yxs_wuzetian:['female','wu',4,['nvquan','qiandu','yxsweiyi']],
 			yxs_caocao:['male','wei',4,['zhulu','xieling']],
 			yxs_mozi:['male','qun',3,['jieyong','feigong','jianai']],
@@ -126,39 +126,41 @@ game.import('character',function(lib,game,ui,get,ai,_status){
     },
             },
                                    		
-			yxs_menshen3:{
+			yxs_menshem3:{
 				trigger:{
 					player:['phaseBegin','dieBegin'],
 				},
 				silent:true,
 				filter:function(event,player){
 					return game.hasPlayer(function(current){
-            return current.hasSkill('yxs_menshen2');
+            return current.hasSkill('yxs_menshem2');
         });
 				},
 				content:function(){
 				 for(var i=0;i<game.players.length;i++){
-            if(game.players[i].hasSkill('yxs_menshen2')){
-					game.players[i].removeSkill('yxs_menshen2');
+            if(game.players[i].hasSkill('yxs_menshem2')){
+					game.players[i].removeSkill('yxs_menshem2');
 					}
 					}
 				},
 			},            
                          
-            yxs_menshen:{
+            yxs_menshem:{
                 audio:2,
-                trigger:{
-                    player:"phaseEnd",
-                },
-                priority:15,                
-               	group:'yxs_menshen3',
+              //  trigger:{
+              //      player:"phaseEnd",
+              //  },
+			  enable:'phaseUse',
+                priority:15,   
+				usable:1,             
+               	group:'yxs_menshem3',
 		           		onremove:true,
                 filter:function (event,player){
         return game.players.length>1;
     },
                 content:function (){
               "step 0"
-     player.chooseTarget('选择【门神】的目标',lib.translate.yxs_menshen_info,true,function(card,player,target){
+     player.chooseTarget('Choose who to create a Replica Android of',lib.translate.yxs_menshem_info,true,function(card,player,target){
              return target!=player;
      }).set('ai',function(target){     
              return get.attitude(player,target);            
@@ -167,24 +169,35 @@ game.import('character',function(lib,game,ui,get,ai,_status){
      if(result.bool){           
         var target=result.targets[0];
 						player.line(target,'green');
-						game.log(target,'成为了','【门神】','的目标');
-						target.storage.yxs_menshen2=player;
-						target.addSkill('yxs_menshen2');
+						game.log(target,'成为了','【门】','的目标');
+						target.storage.yxs_menshem2=player;
+						player.addTempSkill('ybait','roundStart');
+						target.addTempSkill('yxs_menshem2','roundStart');
      }
     else {       
             event.finish(); 
     }                     
    },      
    ai:{
-       expose:0.5,
+	threaten:200,
    },               
             },
          
-           yxs_menshen2:{
+ybait:{
+	ai:{
+		threaten:200,
+	},   
+
+},
+
+
+
+
+           yxs_menshem2:{
      audio:2,
     	mark:'character',
 				intro:{
-					content:'当你成为【杀】或【决斗】的目标后，改为$成为目标'
+					content:'When you are targeted by Strike or SkyWar, $ is actually targeted instead'
 				},
 				nopop:true,
 				priority:15,      
@@ -197,7 +210,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					return player.isAlive();
 				},
                 content:function (){                             
-          var target=player.storage.yxs_menshen2;
+          var target=player.storage.yxs_menshem2;
 		    			trigger.player.line(target,'green');
 			trigger.targets.remove(player);
 				  		trigger.targets.push(target);	
@@ -2944,10 +2957,10 @@ regold:{},
 			yxs_fanji:"反击",
             yxs_fanji2:"反击",
             yxs_fanji_info:"当你受到【杀】或【决斗】造成的伤害后，你可以对伤害来源使用一张【杀】。若此【杀】为红色，其不可闪避",
-            yxs_menshen:"门神",
-            yxs_menshen2:"门神",
-            yxs_menshen3:"门神",
-            yxs_menshen_info:"回合结束阶段，你可选择一名其他角色，若如此做，直到你的下回合开始，所有角色对该角色使用的【杀】或【决斗】均视为对你使用",
+            yxs_menshem:"BaitAndroid",
+            yxs_menshem2:"BaitAndroid",
+            yxs_menshem3:"BaitAndroid",
+            yxs_menshem_info:"Create a BaitAndroid for a Member. When they are targeted, the Strike or SkyWar is targeted at Roars instead!",
 			zhuxin:'诛心',
 			zhuxin_info:'出牌阶段限一次，你可以与一名其他角色拼点，若你赢，你对其造成一点伤害',
 			wlianhuan:'连环',
