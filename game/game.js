@@ -244,7 +244,7 @@
 
 
 					compatiblemode:{
-						name:'Lv.57+ HP Bar',
+						name:'Lv.57+ Border',
 						init:false,
 						intro:'开启兼容模式可防止扩展使游戏卡死并提高对旧扩展的兼容性，但对游戏速度有一定影响，若无不稳定或不兼容的扩展建议关闭',
 						onclick:function(bool){
@@ -3540,7 +3540,7 @@ case 'gbig':zoom=1.6;break;
 					},
 					show_replay:{
 						name:'显示重来按钮',
-						init:false,
+						init:true,
 						unfrequent:true,
 						onclick:function(bool){
 							game.saveConfig('show_replay',bool);
@@ -10327,7 +10327,8 @@ case 'gbig':zoom=1.6;break;
 			heart:"❃",
 			diamond:"♛",
 			spade:"⚶",
-			club:"🜎",
+			club:"☨",
+			//club:"⋚",☨
 			ghujia:'护甲',
 			ghujia_bg:'甲',
 			heart2:"红桃",
@@ -10336,14 +10337,14 @@ case 'gbig':zoom=1.6;break;
 			club2:"梅花",
 			red:'红色',
 			black:'黑色',
-			ok:" GO!! ",
-			ok2:" GO!! ",
+			ok:"<span style='font-family:serif'>Go!!</span> ",
+			ok2:"<span style='font-family:serif'>Go!!</span> ",
 			//ok:'<span style="text-shadow:0px 0px 7px #ff0000, 0px 0px 7px #ff0000;font-size:29px;font-color:red;"> Go!! </span>',
 			//ok2:'<span style="text-shadow:0px 0px 7px #ff0000, 0px 0px 7px #ff0000;font-size:29px;font-color:red;"> Go!! </span>',
 	
 		
-			cancel:"取消",
-			cancel2:"取消",
+			cancel:"<span style='font-family:serif'>no</span> ",
+			cancel2:"<span style='font-family:serif'>no</span> ",
 			restart:"重新开始",
 			setting:"设置",
 			start:"开始",
@@ -10354,14 +10355,14 @@ case 'gbig':zoom=1.6;break;
 			fire:"火",
 			thunder:"雷",
 			poison:"毒",
-			kami:'神',
+			kami:' ',
 			ice:'冰',
 			stab:'刺',
 			wei:'魏',
 			shu:'蜀',
 			wu:'吴',
 			qun:'群',
-			shen:'神',
+			shen:' ',
 			western:'西',
 			key:'键',
 			jin:'晋',
@@ -10424,7 +10425,7 @@ case 'gbig':zoom=1.6;break;
 			_icesha:'冰杀',
 			qianxing:'潜行',
 			mianyi:'免疫',
-			fengyin:'封印',
+			fengyin:'混',
 			baiban:'白板',
 			_disableJudge:"判定区",
 			
@@ -12518,7 +12519,7 @@ case 'gbig':zoom=1.6;break;
 					_status.noclearcountdown=true;
 					if(event.type=='phase'){
 						if(event.isMine()){
-							event.endButton=ui.create.control('Fin','stayleft',function(){
+							event.endButton=ui.create.control('<span style="font-family:serif">{Peace}</span>','stayleft',function(){
 								if(_status.event.skill){
 									ui.click.cancel();
 								}
@@ -16201,7 +16202,8 @@ case 'gbig':zoom=1.6;break;
 						game.broadcastAll(function(nature,player){
 							if(lib.config.animation&&!lib.config.nosparkles){
 								if(nature=='fire'){
-									player.$fire();
+										//TEST
+									//player.$fire();
 								}
 								else if(nature=='thunder'){
 									//TEST
@@ -16774,7 +16776,7 @@ case 'gbig':zoom=1.6;break;
 				},
 				judge:function(){
 					"step 0"
-					var judgestr=get.translation(player)+'的'+event.judgestr+'判定';
+					var judgestr=get.translation(player)+' experiences '+event.judgestr+'...';
 					event.videoId=lib.status.videoId++;
 					var cardj=event.directresult;
 					if(!cardj){
@@ -35559,7 +35561,10 @@ case 'gbig':zoom=1.6;break;
 		},
 		updateRoundNumber:function(){
 			game.broadcastAll(function(num1,num2,top){
-				if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+				//link to showtime
+				//if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+				ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+							
 				//if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' ';
 				
 				_status.pileTop=top;
@@ -37724,7 +37729,7 @@ case 'gbig':zoom=1.6;break;
 						}
 					}
 					//menux=createMenu(['PLAY','SET','武将','卡牌','扩展','VIDEO'],{
-					menux=createMenu(['PLAY','Script',' ',' ',' ','VIDEO'],{
+					menux=createMenu(['Play','SCRIPT',' ',' ',' ','VIDEO'],{
 						position:menuContainer,bar:40
 					});
 				}
@@ -45915,10 +45920,10 @@ case 'gbig':zoom=1.6;break;
 				ui.shortcut=ui.create.div('#shortcut.hidden',ui.window);
 				ui.shortcut.listen(ui.click.shortcut);
 				ui.create.div(ui.shortcut,function(e){e.stopPropagation()});
-				ui.create.div('.menubutton.round','<span>ReDo</span>',ui.shortcut,game.reload).dataset.position=1;
-				ui.create.div('.menubutton.round','<span>Exit</span>',ui.shortcut,game.exit).dataset.position=3;
-				ui.create.div('.menubutton.round','<span>Rest</span>',ui.shortcut,ui.click.pause).dataset.position=4;
-				ui.shortcut.autobutton=ui.create.div('.menubutton.round','<span>MV</span>',ui.shortcut,ui.click.auto);
+				ui.create.div('.menubutton.round','<span style="font-family:serif">ReDo</span>',ui.shortcut,game.reload).dataset.position=1;
+				ui.create.div('.menubutton.round','<span style="font-family:serif">Exit</span>',ui.shortcut,game.exit).dataset.position=3;
+				ui.create.div('.menubutton.round','<span style="font-family:serif">Rest</span>',ui.shortcut,ui.click.pause).dataset.position=4;
+				ui.shortcut.autobutton=ui.create.div('.menubutton.round','<span style="font-family:serif">MV</span>',ui.shortcut,ui.click.auto);
 				ui.shortcut.autobutton.dataset.position=2;
 				ui.favmodelist=ui.create.div('.favmodelist',ui.shortcut);
 				ui.favmodelist.update=function(){
