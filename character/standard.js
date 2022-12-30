@@ -10,7 +10,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			},
 		},
 		character:{	
-			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','XXfwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
 			
 			zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
 			
@@ -14067,6 +14067,7 @@ game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'3!');
 
 			glinit:{
 				enable:'phaseUse',
+				
 				prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
 				init:function(player){
 					player.storage.glinit=1;
@@ -14088,7 +14089,7 @@ game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'3!');
 					target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
 					target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
 					game.delay(2);
-				//#	player.storage.glinit-=2;
+				player.storage.glinit-=2;
 			
 				if(target.hasSkill('roars')&&lib.config.coin%47==0){
 			
