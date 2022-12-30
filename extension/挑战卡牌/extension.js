@@ -77,31 +77,7 @@ str='<span>Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.'
 						}
 						ui.click.window();
 					};
-					for(var i in game.haveFun.list){
-						var item=game.haveFun.list[i];
-						uiintro.add('<div class="coin_buy">'+item.name+'<div class="menubutton">Go</div></div>');
-						var buy=uiintro.content.lastChild.lastChild.lastChild;
-						if(lib.config.coin<item.cost&&!item.bought){
-							buy.classList.add('disabled');
-						}
-						if(item.bought){
-							if(item.running){
-								buy.innerHTML='Pause';
-								if(item.control){
-									var node=item.control();
-									if(node){
-										buy.parentNode.appendChild(node,buy);
-									}
-								}
-							}
-							else{
-								buy.innerHTML='Start';
-							}
-						}
-						buy.name=i;
-						buy.content=item;
-						buy.listen(clickBuy);
-					}
+					
 
 					if(!game.phaseNumber&&!game.online){
 						uiintro.add('下注');
