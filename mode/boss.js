@@ -951,7 +951,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			mode_boss:{  
 			//	boss_hunduan:['male','aw','2131313/2131313',['randsha','sl','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
-				boss_hundun:['male','aw','2131313/2131313',['bosshan','randsha','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+				boss_hundun:['male','aw','1/2131313',['bosshan','randsha','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
 				pea1:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
 				pea2:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
