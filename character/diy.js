@@ -1,4 +1,4 @@
-﻿////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 ///   Black NotePad - 5/14/2022 6:42:11 PM - Not activated   ///
 ////////////////////////////////////////////////////////////////
 'use strict';
@@ -580,11 +580,13 @@ connect:false,
 					},
 				},
 			},
-			liyingxia_wumai:{
-				trigger:{global:'roundStart'},
+			XXliyingxia_wumai:{
+				//trigger:{player:'phaseZhunbeiBegin'},
+				enable:'phaseUse',
 				direct:true,
 				filter:function(event,player){
-					return player.group=='shu'&&(player.getStorage('liyingxia_wumai').length<4||game.hasPlayer((current)=>current.isDamaged()));
+					return true;
+					//return player.group=='shu'&&(player.getStorage('liyingxia_wumai').length<4||game.hasPlayer((current)=>current.isDamaged()));
 				},
 				content:function(){
 					'step 0'
@@ -614,6 +616,10 @@ connect:false,
 				},
 				derivation:['bazhen','rejizhi','reguanxing','youlong'],
 			},
+
+
+
+			
 			kano_liezhen:{
 				trigger:{player:'phaseJieshuBegin'},
 				filter:function(event,player){
@@ -8871,7 +8877,7 @@ connect:false,
 					content:"每当你使用（指定目标后）或被使用（成为目标后）一张【决斗】或红色的【杀】时，你可以摸一张牌。",
 				},
 			},
-			noname_duocai:{
+			xnoname_duocai:{
 				trigger:{
 					global:"loseAfter",
 				},
@@ -8920,7 +8926,8 @@ connect:false,
 					}
 				},
 			},
-			noname_duocai2:{},
+
+			xnoname_duocai2:{},
 			nsbizhao:{
 				trigger:{player:'showCharacterAfter'},
 				forced:true,
@@ -15683,8 +15690,8 @@ connect:false,
 			noname:"小无",
 			noname_zhuyuan:"祝愿",
 			noname_zhuyuan_info:"①每回合每名角色限一次。出牌阶段，你可以将四张花色各不相同的牌交给一名其他角色。你与其获得技能〖铁骑〗和〖激昂〗至各自的回合结束。②锁定技，若你于当前回合内：未发动过〖祝愿〗，则你使用牌无次数限制；发动过〖祝愿〗，则你使用牌无距离限制。",
-			noname_duocai:"多彩",
-			noname_duocai_info:"每回合限一次。其他角色区域内的牌因弃置而进入弃牌堆后，你可以获得之。若你以此法获得的牌数：大于2，你弃置一名角色区域内的一张牌；等于2，你摸一张牌；小于2，你回复1点体力。",
+			xnoname_duocai:"多彩",
+			xnoname_duocai_info:"每回合限一次。其他角色区域内的牌因弃置而进入弃牌堆后，你可以获得之。若你以此法获得的牌数：大于2，你弃置一名角色区域内的一张牌；等于2，你摸一张牌；小于2，你回复1点体力。",
 			ns_huangchengyan:'黄承彦',
 			nslongyue:'龙岳',
 			nslongyue_info:'当一名角色使用锦囊牌时，若此牌是其本回合内使用的第一张牌，则你可令其摸一张牌。',

@@ -1694,7 +1694,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					delete player.storage.lmazui2;
 				}
 			},
-			hyunshen:{
+			xhyunshen:{
 				trigger:{player:['respond','useCard']},
 				filter:function(event,player){
 					return event.card.name=='shan';
@@ -1729,7 +1729,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 				},
 				group:'hyunshen2'
 			},
-			hyunshen2:{
+			xhyunshen2:{
 				trigger:{player:'phaseBegin'},
 				forced:true,
 				filter:function(event,player){
@@ -1746,6 +1746,11 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
+
+
+
 			hlingbo:{
 				audio:['lingbo',2],
 				trigger:{player:['respond','useCard']},

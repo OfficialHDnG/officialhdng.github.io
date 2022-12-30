@@ -705,7 +705,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 				animationColor:'orange',
 				forceunique:true,
 				filter:function(event,player){
-					return player.countMark('fanghun')>0;
+				//	return player.countMark('fanghun')>0;
 				},
 				prompt:function(event,player){
 					var num=Math.max(2,player.storage.fanghun);
@@ -1489,7 +1489,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					result:{player:1},
 				},
 			},
-			twsidao:{
+			xtwsidao:{
 				audio:2,
 				trigger:{
 					global:'gameDrawAfter',
@@ -1529,6 +1529,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					},
 				},
 			},
+
+
+
 			twrangyi:{
 				audio:2,
 				enable:'phaseUse',
