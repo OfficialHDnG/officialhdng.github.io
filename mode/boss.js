@@ -42,7 +42,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			}
-			lib.translate.restart='!';
+			lib.translate.restart='Home';
 			lib.init.css(lib.assetURL+'layout/mode','boss');
 			game.delay(0.1);
 			"step 1"
@@ -949,24 +949,44 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		},
 		characterPack:{
 			mode_boss:{  
+			//	boss_hunduan:['male','aw','2131313/2131313',['randsha','sl','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
-				
-				
-				
-				boss_hundun:['male','aw','2131313/2131313',['pstart'],['zqun','boss','bossallowed'],'zqun'],
+				boss_hundun:['male','aw','2131313/2131313',['bosshan','randsha','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
-				boss_zhuyin:['male','aw','2131313/2131313',['pstart'],['zqun','hiddenboss','bossallowed'],'zqun'],
-				boss_zhuyinb:['male','aw','2131313/2131313',['pstart'],['zqun','hiddenboss','bossallowed'],'zqun'],
-				
+				pea1:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
+				pea2:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
+				boss_r:['male','qun',1,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_a:['male','qun',2,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_g:['male','qun',3,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_x:['male','qun',4,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_taotie:['male','qun',0,['bosshan','taotdia','pstart','scant','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+						
 				//boss_hundun:['male','qan','1750000/1750000',['pin','enemy','hund','rearth2','shejie2','start','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['qun','boss','bossallowed'],'qun'],
+									
+				boss_qiongqi:['male','re','6131313/6131313',['bosshan','qiong','Xustart','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','Xsl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+			//	boss_qiongqix:['male','re','6131313/6131313',['qiong','Xustart','nova','sl','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','Xsl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				
+			//	boss_taowux:['male','gt','6131313/13131313',['bosshan','nova','Xustart','darknyeve','remind','ythunder','drawn','sl','glyptic_taowu','andgen','snyeve','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','enemy','hund','goldenage','glyptic','thund','win'],['zqun','boss','bossallowed'],'zqun'],
+			//	boss_taowu:['male','gt','7131313/7131313',['bosshan','nova','Xustart','darknyeve','remind','drawg','sl','snyeve','jud','expdam','glyptic_taowu','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','goldenage','glyptic','thund','win'],['zqun','boss','bossallowed'],'zqun'],
 											
-			//boss_zhuyin:['male','qun','1750000/1750000',['enemy','actma','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
+				//boss_taowu:['male','qun',0,['glyptic','nova','sl','drawg','jud','pstart','noshanb','killdraw','scant','hund'],['qun','boss','bossallowed'],'qun'],
+				//boss_zhuyin:['male','qun','1750000/1750000',['enemy','actma','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
 				//boss_zhuyinb:['male','qun','1750000/1750000',['enemy','decei','actmb','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
-			//	boss_zhuyinb:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-			//	boss_zhuyin:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_zhuyinb:['male','qun','3131315/3131315',['bosshan','randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_zhuyin:['male','qun','3131314/3131314',['bosshan','randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syinb:['male','qun','3131315/3131315',['bosshan','enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syin:['male','qun','2131314/2131314',['bosshan','enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyinb:['male','qun','2131315/3131315',['bosshan','enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyin:['male','qun','3131314/3131314',['bosshan','enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
 			
-				boss_xiangliu:['male','qun',25,['boss_yaoshou','boss_duqu','boss_jiushou','boss_echou','boss_echou_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_zhuyan:['male','qun','25/30',['boss_yaoshou','boss_bingxian','boss_juyuan','boss_xushi','boss_xushi_switch'],['qun','boss','bossallowed'],'qun'],
+			//	boss_zhuyan:['male','xo','4131313/4131313',['nova','healbe','remind','resha','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawx','scant','XXsl','enemy','hund','dh','darkh','x','glyptic','ocean','win'],['zqun','boss','bossallowed'],'zqun'],
+						
+				//challenge		boss_zhuyan:['male','gt','3111111/3111111',['nova','hiimsea','hiim','remind','sl','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','x','glyptic','ocean','win'],['zqun','boss','bossallowed'],'zqun'],
+						boss_zhuyaml:['male','qun','4131315/4131315',['enemy','ocean','min','nova','jud','XXexpltwo','randsha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+						boss_zhuyamr:['male','qun','4131314/4131314',['enemy','ocean','min','nova','jud','XXexplfour','randjue','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+						
+				
+				
 				boss_bifang:['male','qun',25,['boss_yaoshou','boss_zhaohuo','boss_honglianx','boss_yanyu','boss_yanyu_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_yingzhao:['male','qun',25,['boss_yaoshou','boss_fengdong','boss_xunyou','boss_sipu','boss_sipu_switch'],['qun','boss','bossallowed'],'qun'],
 
@@ -1060,7 +1080,21 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		},
 
 		characterIntro:{
+			boss_hundun:'【Boss】1st Dark entity pretending to be Ea </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span>Non-elemental</br></br>Strength: 65k',
+			boss_qiongqi:'【Boss】1st Dark entity pretending to be Shone </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>StarEarth elemental</br>Strength: 33.4k / SkyWar: 31k / Careless: Boss boosts Strength to 230%!',
+			boss_taowu:'【Boss】1st Dark entity pretending to be Nyeve </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span></br>Thunder elemental</br>',
+			boss_taowux:'【Boss】1st 魔 entity pretending to be Nyeve: Challenger Mode </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span></br>Thunder elemental</br>',
+			boss_zhuyan:'【Boss】1st Dark entity pretending to be Healon</br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#healon" target="blank">Lore of Healon</a></span></br>Ocean elemental</br>',
 			
+			boss_tyin:'ParallelFragment',
+			boss_tyinb:'ParallelFragment',
+			boss_zhuyin:'ParallelFragment',
+			boss_zhuyinb:'ParallelFragment',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
+			boss_zhuyaml:'Ocean elemental',
+			boss_zhuyamr:'Ocean elemental',
+
 		},
 
 		cardPack:{
@@ -1291,7 +1325,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		
 					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
 					//var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
-					var dialog=ui.create.dialog('<span style="font-size:24px">마 슽 채 인  연 구 실</span></br><span style="font-size:14px">힏엔젬 1.1.2023</span></br></br><span style="font-size:37px">{ 往 事 · 永 恒  }</span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">English</a> · <a href="media.html#LIGHT" target="blank">뉴스</a></br>   </span>');
+					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><a href="https://officialhdng.github.io/home">{谙灵光} 汉·中版</a></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="phone.html#LIGHT" target="blank"> PHONE PLAY</a> · <a href="777.html" target="blank">Win $777</a></br></br></span><span style="font-size:17px">Phones: Horizontal Mode & Light Mode is Best. Speed is based on power of your mobile browser. Switch to Laptop for highest speed!</span></br></br>Choose 3 members - the Go button will appear!</span>');
 					
 					
 					ui.create.control('+',function(){						
@@ -1469,11 +1503,11 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'boss_zhuyaml',
+					'8':'boss_zhuyamr',
 				},
 				randchoice:function(){
 					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
@@ -1721,6 +1755,21 @@ game.documentZoom=game.deviceZoom*1;
 
 
 
+
+			boss_taowux:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+				minion:{
+					'2':'boss_tyin',
+					'8':'boss_tyinb',
+				},},
+
+
 			boss_taowu:{
 				chongzheng:0,
 				loopFirst:function(){
@@ -1730,8 +1779,8 @@ game.documentZoom=game.deviceZoom*1;
 					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'boss_tyin',
+					'8':'boss_tyinb',
 				},
 				randchoice:function(name,list){
 					if(Math.random()>1/3){
@@ -3235,7 +3284,7 @@ if(event.targets.length&&game.roundNumber%4==0){
 						}
 
 						if(lib.config.ultt){
-							game.broadcastAll('createDialog',event.videoId, '2nd Eden ' + lib.config.aede +'\u00B0');	
+							game.broadcastAll('createDialog',event.videoId, 'Ea ' + lib.config.aede +'\u00B0');	
 							game.delay(2);
 						}
 
@@ -3246,11 +3295,15 @@ if(event.targets.length&&game.roundNumber%4==0){
 					if(!result.tie){
 						var targets=[player,target];
 						if(result.bool) targets.reverse();
-						var z=Math.min(lib.config.lvx,338351);
-						var x=(Math.floor(Math. sqrt(z/777)));
-						var y=((x*x*450/38.7));
-						var a=1400+y;
-						targets[0].damage('fire',targets[0],a,);
+						var z=Math.min(lib.config.lvx,17482500);
+						var x=(Math.floor(Math. sqrt(z/777)));		
+						var a=x+7;		
+						
+						var b=player.storage.glyptic4;
+						var c=player.storage.glyptic10;
+						var d=(2*(518+b)*c*(1+a/100));
+
+						targets[0].damage('fire',targets[0],d,);
 
 						//player.damage('nosource','fire',3).animate=false;
 
@@ -9320,7 +9373,251 @@ regem:{
 			},
 
 
+comeback:{
+	forced:true,
+	direct:true,
+	filter:function(event,player){
+	return lib.config.musicsw==1;
+	
+},
+	trigger:{
+		
+		player:'phaseZhunbeiBegin',
+	},
 
+	content:function (){
+
+'step 0'
+game.saveConfig('musicsw','0');				
+
+		game.saveConfig('background_music','music_default');				
+
+							game.playBackgroundMusic();
+},},
+
+			win:{
+				trigger:{
+					player:"dying",
+				},
+				popup:false,
+forced:true,
+content:function (){
+
+	//game.saveConfig('background_music','music_phliosophy');	
+	//game.saveConfig('musicsw','1');	
+	//game.playBackgroundMusic();
+player.$fullscreenpop('YOU GOT A WIN!','metal');
+ui.background.setBackgroundImage('image/background/win.jpg');
+},			},
+
+
+los:{
+	trigger:{
+		player:"dying",
+	},
+	popup:false,
+forced:true,
+content:function (){
+
+game.saveConfig('background_music','music_phliosophy');	
+game.saveConfig('musicsw','1');	
+game.playBackgroundMusic();
+
+},			},
+
+
+
+			darkshone:{				
+				unique:true,
+		charlotte:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+			 filter:function(event,player){
+					if(game.roundNumber!=1) return false;
+				if(!lib.config.rpgstory) return false;
+				return true;
+				
+			},
+
+
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	
+	 if(!lib.config.nosparkles){
+		player.$dust();
+	}
+
+
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'Boss: "Everything is about being the best"');
+	game.delay(4);
+             
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'"to be the best, other people have to be under you"');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'"life isnt fair so...climb over everyone struggling beneath you" ');
+	   game.delay(3);
+'step 5'
+game.broadcastAll('createDialog',event.videoId,' ');
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
+
+			darknyeve:{				
+				unique:true,
+		charlotte:true,
+		forced:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+			 filter:function(event,player){
+					if(game.roundNumber!=1) return false;
+				if(!lib.config.rpgstory) return false;
+				return true;							},
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+		 if(!lib.config.nosparkles){
+		player.$dust();
+	}
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'If you do not worship me for my powers from Yemog');
+	// game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-size:99px;font-variant:small-caps;">Roars, you cannot possibly</span>');
+	// game.broadcastAll('createDialog',event.videoId,'<img src="image/background/cute.gif" height="500" width="800"></img>');
+	game.delay(4);
+	
+	// game.delay(14);               
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'worship me for my tireless prevention of crime in your City');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'your safety, your life is thanks to me');
+	   game.delay(3);
+'step 5'
+game.broadcastAll('createDialog',event.videoId,'. ');
+game.delay(4);
+'step 6'
+game.broadcastAll('createDialog',event.videoId,'GoldenAge: but...Nyeve never asked for fame or worship');
+game.delay(4);
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
+
+
+
+			darknyeve:{				
+				unique:true,
+		charlotte:true,
+		forced:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+			 filter:function(event,player){
+					if(game.roundNumber!=1) return false;
+				if(!lib.config.rpgstory) return false;
+				return true;							},
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+		 if(!lib.config.nosparkles){
+		player.$dust();
+	}
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'If you do not worship me for my powers from Yemog');
+	// game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-size:99px;font-variant:small-caps;">Roars, you cannot possibly</span>');
+	// game.broadcastAll('createDialog',event.videoId,'<img src="image/background/cute.gif" height="500" width="800"></img>');
+	game.delay(4);
+	
+	// game.delay(14);               
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'worship me for my tireless prevention of crime in your City');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'your safety, your life is thanks to me');
+	   game.delay(3);
+'step 5'
+game.broadcastAll('createDialog',event.videoId,'. ');
+game.delay(4);
+'step 6'
+game.broadcastAll('createDialog',event.videoId,'GoldenAge: but...Nyeve never asked for fame or worship');
+game.delay(4);
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
+
+
+
+
+
+
+
+			
+
+
+
+			dshonestory:{
+				unique:true,
+		charlotte:true,
+			
+				//limited:true,
+		init:function(player){			
+						player.storage.dshonestory=1;
+							},	
+				skillAnimation:true,
+				animationColor:'fire',
+ 					 trigger:{player:'phaseZhunbeiBegin'},
+
+				
+						filter:function(event,player){
+							return player.hp<=1313138&&player.storage.dshonestory>=1&&lib.config.rpgstory;
+						},
+
+					content:function (player){
+				   'step 0'
+				player.storage.dshonestory-=3;
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'No one can shake Elrondes reign');
+	 game.delay(4);
+                
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'I can only hope to change it from within.');
+	   game.delay(4);
+
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'I believe my skills will change him. He will value the android empire.');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'If I become one of Elrondes agents');
+	game.delay(4);
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'Give us your blessings.');
+	game.delay(4);
+'step 7'
+
+player.draw(2);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('妄天 傷','fire');
+player.$fullscreenpop('妄天 傷','fire','dva.png');
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//'step 8'
+//game.addGlobalSkill('chaoli');
+				}
+			},
 
 
 
@@ -9383,6 +9680,177 @@ ui.background.setBackgroundImage('image/background/ol_bg.jpg');
 			
 	
 
+
+
+
+			newdshonestory:{
+				trigger:{player:'phaseZhunbeiBegin'},
+					filter:function(event){
+					return player.hp<=5252500&&player.storage.dshonestory>=1;
+				},
+					init:function(player){			
+						player.storage.dshonestory=1;
+							},	
+				forced:true,
+							content:function (){
+				
+								'step 1'
+								ui.background.setBackgroundImage('image/background/hdng.jpg');
+							   
+								'step 2'
+								game.broadcastAll('createDialog',event.videoId,'涅芙');
+								game.delay(4);
+										   
+								  'step 3'
+								  game.broadcastAll('createDialog',event.videoId,'我相信我的能力可以改变爻论。');
+								  game.delay(4);
+						   
+							   'step 4'
+							   game.broadcastAll('createDialog',event.videoId,'他会好好把握我们生化帝国的资源。而我会说服他，将他的精力转向贡献社会');
+							   game.delay(4);
+						   
+							   'step 5'
+							   game.broadcastAll('createDialog',event.videoId,'若你好不起来了。若我成为爻论的手下');
+							   game.delay(4);
+						   
+							   'step 6'
+							   game.broadcastAll('createDialog',event.videoId,'祝福我和爻论的世界帝国吧');
+							   game.delay(4);
+						   'step 7'
+						   
+						   player.draw(2);
+						   game.delay();
+						   player.recover(9999);
+						   player.$fullscreenpop('妄天 伤','fire');
+						   player.$fullscreenpop('妄天 伤','fire','dva.png');
+						   ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+	
+				}
+			},	
+
+
+
+
+
+
+
+
+
+			introd:{
+				audio:2,
+			unique:true,
+		charlotte:true,			
+					usable:1,
+				 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							if(game.roundNumber!=1) return false;
+							if(!lib.config.rpgstory) return false;
+							return true;							
+							//return player.storage.activatex==1&&game.roundNumber==1&&lib.config.speed!='vfast';
+						},
+				content:function (player){
+					'step 0'
+					 ui.background.setBackgroundImage('image/background/hdng.jpg');
+					 game.delay(2);
+		 'step 1'
+	 game.broadcastAll('createDialog',event.videoId,'Boss: "Our world no longer has hidden gems"');
+	 game.delay(4);
+
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'"anyone who deserves to be famous already is - no one else deserves attention');
+	 game.delay(4);
+
+	 'step 3'
+	 game.broadcastAll('createDialog',event.videoId,'"so why do you 4 try to bring attention to hidden gems? You know, you are only shadows yourselves"');
+	 game.delay(4);
+
+	
+
+				}},
+
+
+
+
+			activatex:{
+				audio:2,
+				init:function(player){
+					player.storage.activatex=1;		
+				},
+				unique:true,
+		charlotte:true,			
+					usable:1,
+				 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							if(player.storage.activatex!=1) return false;
+							if(game.roundNumber!=8) return false;
+							if(!lib.config.rpgstory) return false;
+							return true;							
+							//return player.storage.activatex==1&&game.roundNumber==1&&lib.config.speed!='vfast';
+						},
+				content:function (player){
+				
+				    'step 0'
+					player.storage.activatex-=1;
+	 //  game.broadcast('createDialog',event.videoId,get.translation(player)+'正在擦拭宝物...');
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	 //player.$flame();
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'I cant...its CTVT afterall');
+	 game.delay(4);
+                
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'How many millions have died in the Pinnacle...all these lives no one could save');
+	   game.delay(4);
+
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'what do I have over others to save Nyeve from the same cancer?');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'the last time I lost her destroyed me. If this time, I dont repeat my self-destruction');
+	game.delay(4);
+
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'would you blame me, my little sister?');
+	game.delay(4);
+
+
+	'step 7'
+	game.broadcastAll('createDialog',event.videoId,'. ');
+	game.delay(3);
+
+	'step 8'
+	game.broadcastAll('createDialog',event.videoId,'GoldenAge: this boss we are fighting..this is Ea？ ');
+	game.delay(4);
+	
+	'step 9'
+	game.broadcastAll('createDialog',event.videoId,'Roars: No, Ea will never harm us');
+	game.delay(4);
+
+	'step 10'
+	game.broadcastAll('createDialog',event.videoId,'X: Its a fake. The real Ea is not here');
+	game.delay(4);
+
+	'step 11'
+	game.broadcastAll('createDialog',event.videoId,'Airson: Ea, wherever you are...give us your strength');
+	game.delay(4);
+	'step 12'
+	game.broadcastAll('createDialog',event.videoId,' ');
+
+'step 12'
+
+player.draw(5);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('療無遺芽','fire');
+player.$fullscreenpop('療無遺芽','fire','dva.png');
+player.storage.activatex-=1;
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//game.changeCoin(52);
+				},
+			},
 
 
 
@@ -9746,18 +10214,13 @@ ui.background.setBackgroundImage('image/background/ol_bg.jpg');
 			boss_yanling:'焰灵',
 			boss_yandi:'炎帝',
 
-			boss_hundun:' ',
-			boss_qiongqi:' ',
-			boss_zhuyin:' ',
-			boss_zhuyinb:' ',
-			boss_syin:' ',
-			boss_syinb:' ',
+		
 			
 
 
 			
 
-			boss_taowu:'梼杌',
+	
 			boss_taotie:'饕餮',
 		
 			boss_xiangliu:'相柳',
@@ -10272,6 +10735,20 @@ qbn:' ',
 			boss_shikieiki_ab:'四季映姫',
 			boss_shikieiki:'四季映姬·夜魔仙那度',
 			boss_yingzhong:'映冢',
+			boss_hundun:'【Boss】1st Dark Ea',
+			boss_qiongqi:'【Boss】1st Dark Shone',
+			boss_zhuyin:'ParallelFragment',
+			boss_zhuyinb:'ParallelFragment',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
+			boss_tyin:'ParallelFragment',
+			boss_tyinb:'ParallelFragment',
+		
+			boss_taowu:'【Boss】1st Dark Nyeve',
+
+			boss_taowux:'【Boss】1st Dark Nyeve-魔',
+
+
 			boss_yingzhong_info:'锁定技。你登场后的第一个回合开始时，你随机获得两个“阴间武将”的全部技能。',
 			boss_yingzhong_append:'<span style="font-family:yuanli">四季映姬到阴曹地府<br>——阴(映)到家了！</span>',
 					//孟婆:
@@ -10288,7 +10765,7 @@ qbn:' ',
 			nsfeixiong:'Mini Mystery I',
 			qiong:'Careless',
 			qiong_info:'Boss boosts Strength to 230%!',
-			nsfeixiong_info:'Choose an Enemy, and play a LoreCard!',
+			nsfeixiong_info:'Choose a target who holds a LoreSong, and play a LoreSong together with them!',
 			//地藏王:
 
 			
